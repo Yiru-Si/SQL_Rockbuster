@@ -1,0 +1,36 @@
+# Data Overview: Here is a series of SQL queries to get an overview of data sets 'Customer', 'Country', 'Film', 'Film language', 'Release year' and 'Store location'.
+				
+SELECT COUNT(customer_id)				
+FROM customer				
+WHERE active = 1				
+				
+SELECT COUNT(film_id)				
+FROM film				
+				
+SELECT COUNT(country_id)				
+FROM country				
+				
+SELECT MIN(release_year),				
+       MAX(release_year)				
+FROM film				
+				
+SELECT D.country,				
+       COUNT(store_id) AS count_of_store				
+FROM store A				
+INNER JOIN address B on A.address_id = B.address_id				
+INNER JOIN city C on B.city_id = C.city_id				
+INNER JOIN country D on C.country_id = D.country_id				
+GROUP BY country				
+ORDER BY count_of_store DESC				
+				
+SELECT name AS language_name,				
+       COUNT(language_id) AS count_of_language				
+FROM language 				
+GROUP BY name				
+ORDER BY COUNT(language_id) DESC				
+				
+SELECT B.name, 				
+				
+FROM film A				
+INNER JOIN language B on A.language_id = B.language_id				
+GROUP BY B.name

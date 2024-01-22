@@ -2,7 +2,7 @@
 Rockbuster Stealth Data Analysis Project - help with the launch strategy for the new online video service. 
 
 ## Background and Objective
-Ruckbuster Stealth LLC is a movie rental company that used to have stores around the world. Facing stiff competition from streaming services such as Netflix and Amazon Prime, Rockbuster Stealth is planning to use its existing movie licenses to launch an online video rental service in order to stay competitive. To help with the launch strategy for the new online video service, I used SQL to analyze the data and answer business questions that other departments may have.
+Ruckbuster Stealth LLC is a movie rental company that used to have stores around the world. Facing stiff competition from streaming services such as Netflix and Amazon Prime, Rockbuster Stealth is planning to use its existing movie licenses to launch an online video rental service in order to stay competitive. To help with the launch strategy for the new online video service, I use SQL to analyze the data and answer business questions that other departments may have.
 
 ## Key Questions
 * Which movies contributed the most/least to revenue gain?
